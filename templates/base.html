@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCI_MU- {% block title %}{% endblock %}</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='icon.jpg') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/programs.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/departments.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('home') }}">
+                <i class="fas fa-university ms-2"></i>
+                كلية الحاسبات والمعلومات
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('home') }}">
+                            <i class="fas fa-home ms-1"></i>
+                            الرئيسية
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('about') }}">
+                            <i class="fas fa-info-circle ms-1"></i>
+                            عن الكلية
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('departments') }}">
+                            <i class="fas fa-building ms-1"></i>
+                            الأقسام
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('programs') }}">
+                            <i class="fas fa-graduation-cap ms-1"></i>
+                            البرامج
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('contact') }}">
+                            <i class="fas fa-envelope ms-1"></i>
+                            اتصل بنا
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Spacer for fixed navbar -->
+    <div style="margin-top: 76px;"></div>
+
+    <main class="container mt-4">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="bg-gradient text-light mt-5">
+        <div class="container py-5">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-4">
+                        <i class="fas fa-university ms-2"></i>
+                        كلية الحاسبات والمعلومات
+                    </h5>
+                    <p class="mb-4">نحو مستقبل رقمي أفضل من خلال التعليم والابتكار في مجالات علوم الحاسب وتكنولوجيا المعلومات.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-4">روابط سريعة</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-2">
+                            <i class="fas fa-chevron-left ms-2"></i>
+                            <a href="{{ url_for('home') }}" class="text-light text-decoration-none">الرئيسية</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-chevron-left ms-2"></i>
+                            <a href="{{ url_for('about') }}" class="text-light text-decoration-none">عن الكلية</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-chevron-left ms-2"></i>
+                            <a href="{{ url_for('departments') }}" class="text-light text-decoration-none">الأقسام</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-chevron-left ms-2"></i>
+                            <a href="{{ url_for('programs') }}" class="text-light text-decoration-none">البرامج</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-chevron-left ms-2"></i>
+                            <a href="{{ url_for('contact') }}" class="text-light text-decoration-none">اتصل بنا</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-4">معلومات الاتصال</h5>
+                    <ul class="list-unstyled footer-contact">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt ms-2"></i>
+                            العنوان: الحرم الجامعي
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone ms-2"></i>
+                            الهاتف: +20 xxx xxx xxxx
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope ms-2"></i>
+                            البريد: info@fci-university.edu.eg
+                        </li>
+                        <li>
+                            <i class="fas fa-clock ms-2"></i>
+                            ساعات العمل: 9:00 ص - 5:00 م
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom py-3 text-center border-top border-secondary">
+            <div class="container">
+                <p class="mb-0">جميع الحقوق محفوظة © 2025 كلية الحاسبات والمعلومات</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

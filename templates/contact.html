@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock %}
+{% block nav_contact %}active{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<div class="contact-hero text-center text-light py-5 position-relative overflow-hidden">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative">
+        <h1 class="display-4 mb-3">تواصل معنا</h1>
+        <p class="lead">نحن هنا للإجابة على استفساراتكم ومساعدتكم</p>
+    </div>
+</div>
+
+<div class="container position-relative">
+
+    <!-- Contact Cards -->
+    <div class="contact-cards-wrapper">
+        <div class="row g-4">
+            <!-- Address -->
+            <div class="col-md-4">
+                <div class="contact-info-card card border-0 shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4 text-center">
+                        <div class="contact-icon mb-4">
+                            <span class="icon-circle bg-primary-light">
+                                <i class="fas fa-map-marker-alt text-primary fa-2x"></i>
+                            </span>
+                        </div>
+                        <h3 class="h5 mb-3">العنوان</h3>
+                        <p class="text-muted mb-0">
+                            كلية الحاسبات والمعلومات<br>
+                            الحرم الجامعي<br>
+                            مصر
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Phone -->
+            <div class="col-md-4">
+                <div class="contact-info-card card border-0 shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4 text-center">
+                        <div class="contact-icon mb-4">
+                            <span class="icon-circle bg-primary-light">
+                                <i class="fas fa-phone-alt text-primary fa-2x"></i>
+                            </span>
+                        </div>
+                        <h3 class="h5 mb-3">الهاتف</h3>
+                        <p class="text-muted mb-2">الإدارة: +20 xxx xxx xxxx</p>
+                        <p class="text-muted mb-0">شؤون الطلاب: +20 xxx xxx xxxx</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Email -->
+            <div class="col-md-4">
+                <div class="contact-info-card card border-0 shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4 text-center">
+                        <div class="contact-icon mb-4">
+                            <span class="icon-circle bg-primary-light">
+                                <i class="fas fa-envelope text-primary fa-2x"></i>
+                            </span>
+                        </div>
+                        <h3 class="h5 mb-3">البريد الإلكتروني</h3>
+                        <p class="text-muted mb-2">info@fci-university.edu.eg</p>
+                        <p class="text-muted mb-0">support@fci-university.edu.eg</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form-section mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-5">
+                        <div class="text-center mb-5">
+                            <span class="badge bg-primary px-3 py-2 mb-3">راسلنا</span>
+                            <h2 class="section-title">أرسل لنا رسالة</h2>
+                            <p class="text-muted">يسعدنا تلقي استفساراتكم واقتراحاتكم</p>
+                        </div>
+                        <form method="POST" class="contact-form" action="https://formspree.io/f/manebrya">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <div class="form-group modern-input">
+                                        <i class="fas fa-user"></i>
+                                        <input type="text" name="name" placeholder="الاسم" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group modern-input">
+                                        <i class="fas fa-envelope"></i>
+                                        <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group modern-input">
+                                        <i class="fas fa-tag"></i>
+                                        <input type="text" name="subject" placeholder="موضوع الرسالة" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group modern-input">
+                                        <i class="fas fa-comment"></i>
+                                        <textarea name="message" placeholder="اكتب رسالتك هنا..." rows="5" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn-modern">
+                                        <i class="fas fa-paper-plane"></i> إرسال الرسالة
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Working Hours -->
+    <div class="working-hours-section my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="text-center mb-4">
+                            <span class="badge bg-primary px-3 py-2 mb-3">مواعيد العمل</span>
+                            <h2 class="section-title">ساعات العمل</h2>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th class="text-center">اليوم</th>
+                                        <th class="text-center">المواعيد</th>
+                                        <th class="text-center">الحالة</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">الأحد - الخميس</td>
+                                        <td class="text-center">9:00 صباحاً - 5:00 مساءً</td>
+                                        <td class="text-center"><span class="badge bg-success">مفتوح</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">الجمعة - السبت</td>
+                                        <td class="text-center">-</td>
+                                        <td class="text-center"><span class="badge bg-danger">مغلق</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

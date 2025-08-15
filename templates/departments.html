@@ -1,0 +1,304 @@
+{% extends "base.html" %}
+
+{% block title %}Departments{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="department-hero text-center py-5 mb-5 bg-gradient text-light">
+    <div class="container">
+        <h1 class="display-4 mb-3">أقسام الكلية</h1>
+        <p class="lead">اكتشف أقسامنا المتخصصة في مجالات الحوسبة وتكنولوجيا المعلومات</p>
+    </div>
+</div>
+
+<div class="container">
+    <!-- Main Departments Section -->
+    <div class="row g-4 mb-5">
+        <div class="col-lg-4 col-md-6">
+            <div class="department-card card h-100 border-0 shadow-sm">
+                <!-- <div class="card-img-overlay-wrap">
+                    <img src="https://via.placeholder.com/800x400?text=CS" class="card-img-top" alt="علوم الحاسب">
+                    <div class="overlay"></div>
+                </div> -->
+                <div class="card-body">
+                    <div class="department-icon mb-3">
+                        <i class="fas fa-laptop-code fa-2x text-primary"></i>
+                    </div>
+                    <h2 class="h3 card-title mb-3">علوم الحاسب</h2>
+                    <p class="card-text mb-4">يركز قسم علوم الحاسب على المبادئ والممارسات الأساسية للحوسبة، ويشمل المنهج:</p>
+                    <ul class="list-unstyled feature-list">
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-primary ms-2"></i>
+                            الخوارزميات وهياكل البيانات
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-primary ms-2"></i>
+                            هندسة البرمجيات
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-primary ms-2"></i>
+                            الذكاء الاصطناعي
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-primary ms-2"></i>
+                            شبكات الحاسب
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-primary ms-2"></i>
+                            نظم التشغيل
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-primary ms-2"></i>
+                            نظم قواعد البيانات
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-outline-primary rounded-pill">المزيد عن القسم</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <div class="department-card card h-100 border-0 shadow-sm">
+                <!-- <div class="card-img-overlay-wrap">
+                    <img src="https://via.placeholder.com/800x400?text=IS" class="card-img-top" alt="نظم المعلومات">
+                    <div class="overlay"></div>
+                </div> -->
+                <div class="card-body">
+                    <div class="department-icon mb-3">
+                        <i class="fas fa-database fa-2x text-primary"></i>
+                    </div>
+                    <h2 class="h3 card-title mb-3">نظم المعلومات</h2>
+                    <p class="card-text mb-4">يربط قسم نظم المعلومات بين التكنولوجيا واحتياجات الأعمال، ويشمل المجالات الرئيسية:</p>
+                    <ul class="list-unstyled feature-list">
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-primary ms-2"></i>
+                            تحليل العمليات التجارية
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-primary ms-2"></i>
+                            إدارة قواعد البيانات
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-primary ms-2"></i>
+                            نظم المؤسسات
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-primary ms-2"></i>
+                            تحليل البيانات
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-primary ms-2"></i>
+                            تحليل وتصميم النظم
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-primary ms-2"></i>
+                            حلول الأعمال الإلكترونية
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-outline-primary rounded-pill">المزيد عن القسم</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <div class="department-card card h-100 border-0 shadow-sm">
+                <!-- <div class="card-img-overlay-wrap">
+                    <img src="https://via.placeholder.com/800x400?text=IT" class="card-img-top" alt="تكنولوجيا المعلومات">
+                    <div class="overlay"></div>
+                </div> -->
+                <div class="card-body">
+                    <div class="department-icon mb-3">
+                        <i class="fas fa-network-wired fa-2x text-primary"></i>
+                    </div>
+                    <h2 class="h3 card-title mb-3">تكنولوجيا المعلومات</h2>
+                    <p class="card-text mb-4">يركز قسم تكنولوجيا المعلومات على التطبيقات العملية للتكنولوجيا، وتشمل مجالات التركيز:</p>
+                    <ul class="list-unstyled feature-list">
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-primary ms-2"></i>
+                            إدارة الشبكات
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-primary ms-2"></i>
+                            تقنيات الويب
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-primary ms-2"></i>
+                            البنية التحتية لتكنولوجيا المعلومات
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-primary ms-2"></i>
+                            الأمن السيبراني
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-primary ms-2"></i>
+                            الحوسبة السحابية
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-primary ms-2"></i>
+                            تطوير تطبيقات الموبايل
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-outline-primary rounded-pill">المزيد عن القسم</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Research & Labs Section -->
+    <section class="research-section py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">المعامل ومجالات البحث</h2>
+            <div class="row g-4">
+                <!-- Current Research -->
+                <div class="col-lg-6">
+                    <div class="research-area-card">
+                        <h3 class="h4 mb-4">
+                            <i class="fas fa-microscope ms-2 text-primary"></i>
+                            مجالات البحث الحالية
+                        </h3>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="research-item p-3 bg-white rounded shadow-sm">
+                                    <i class="fas fa-brain text-primary mb-2"></i>
+                                    <h4 class="h6 mb-0">الذكاء الاصطناعي وتعلم الآلة</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="research-item p-3 bg-white rounded shadow-sm">
+                                    <i class="fas fa-database text-primary mb-2"></i>
+                                    <h4 class="h6 mb-0">تحليل البيانات الضخمة</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="research-item p-3 bg-white rounded shadow-sm">
+                                    <i class="fas fa-network-wired text-primary mb-2"></i>
+                                    <h4 class="h6 mb-0">إنترنت الأشياء</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="research-item p-3 bg-white rounded shadow-sm">
+                                    <i class="fas fa-shield-alt text-primary mb-2"></i>
+                                    <h4 class="h6 mb-0">الأمن السيبراني</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="research-item p-3 bg-white rounded shadow-sm">
+                                    <i class="fas fa-cloud text-primary mb-2"></i>
+                                    <h4 class="h6 mb-0">الحوسبة السحابية</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Research Facilities -->
+                <div class="col-lg-6">
+                    <div class="research-area-card">
+                        <h3 class="h4 mb-4">
+                            <i class="fas fa-flask ms-2 text-primary"></i>
+                            المعامل البحثية
+                        </h3>
+                        <div class="facilities-list">
+                            <div class="facility-item p-3 bg-white rounded shadow-sm mb-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-server text-primary fa-2x ms-3"></i>
+                                    <div>
+                                        <h4 class="h6 mb-1">معمل الحوسبة المتقدمة</h4>
+                                        <p class="mb-0 text-muted">أحدث أجهزة الحاسب والمعالجات للبحث العلمي</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="facility-item p-3 bg-white rounded shadow-sm mb-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-network-wired text-primary fa-2x ms-3"></i>
+                                    <div>
+                                        <h4 class="h6 mb-1">معمل الشبكات والأمن</h4>
+                                        <p class="mb-0 text-muted">معدات متطورة لأبحاث أمن الشبكات</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="facility-item p-3 bg-white rounded shadow-sm mb-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-robot text-primary fa-2x ms-3"></i>
+                                    <div>
+                                        <h4 class="h6 mb-1">معمل الذكاء الاصطناعي والروبوتات</h4>
+                                        <p class="mb-0 text-muted">روبوتات وأنظمة ذكاء اصطناعي متقدمة</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="facility-item p-3 bg-white rounded shadow-sm mb-3">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-code text-primary fa-2x ms-3"></i>
+                                    <div>
+                                        <h4 class="h6 mb-1">معمل هندسة البرمجيات</h4>
+                                        <p class="mb-0 text-muted">بيئة متكاملة لتطوير البرمجيات</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="facility-item p-3 bg-white rounded shadow-sm">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-chart-network text-primary fa-2x ms-3"></i>
+                                    <div>
+                                        <h4 class="h6 mb-1">مركز علوم البيانات</h4>
+                                        <p class="mb-0 text-muted">مركز متخصص في تحليل البيانات الضخمة</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section py-5">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-card p-4 bg-primary bg-gradient text-white rounded">
+                        <i class="fas fa-users fa-2x mb-3"></i>
+                        <h3 class="h2 mb-2">50+</h3>
+                        <p class="mb-0">أعضاء هيئة التدريس</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-card p-4 bg-primary bg-gradient text-white rounded">
+                        <i class="fas fa-flask fa-2x mb-3"></i>
+                        <h3 class="h2 mb-2">15+</h3>
+                        <p class="mb-0">معمل بحثي</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-card p-4 bg-primary bg-gradient text-white rounded">
+                        <i class="fas fa-file-alt fa-2x mb-3"></i>
+                        <h3 class="h2 mb-2">200+</h3>
+                        <p class="mb-0">بحث منشور</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stats-card p-4 bg-primary bg-gradient text-white rounded">
+                        <i class="fas fa-handshake fa-2x mb-3"></i>
+                        <h3 class="h2 mb-2">30+</h3>
+                        <p class="mb-0">شراكة بحثية</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Floating Action Button -->
+<div class="floating-action-btn">
+    <a href="#" class="btn btn-primary rounded-circle shadow-lg">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+{% endblock %}

@@ -1,0 +1,294 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="main-hero text-center position-relative overflow-hidden">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative">
+        <div class="hero-content">
+            <h1 class="display-3 mb-4 text-white animate-in">كلية الحاسبات والمعلومات</h1>
+            <p class="lead text-white mb-5 animate-in">نحو مستقبل رقمي أفضل من خلال التعليم والابتكار</p>
+            <div class="hero-buttons">
+                <a href="{{ url_for('programs') }}" class="btn btn-primary btn-lg mx-2 animate-in">استكشف برامجنا</a>
+                <a href="{{ url_for('about') }}" class="btn btn-outline-light btn-lg mx-2 animate-in">تعرف علينا</a>
+            </div>
+        </div>
+    </div>
+    <div class="wave-bottom">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,144C960,149,1056,139,1152,122.7C1248,107,1344,85,1392,74.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    </div>
+</div>
+
+<!-- Key Features Section -->
+<section class="features-section py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="badge bg-primary px-3 py-2 mb-3">مميزاتنا</span>
+            <h2 class="section-title">ما يميزنا</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="feature-card h-100 p-4 text-center border rounded bg-white hover-shadow">
+                    <div class="feature-icon mb-4">
+                        <span class="icon-circle bg-primary-light">
+                            <i class="fas fa-graduation-cap text-primary fa-2x"></i>
+                        </span>
+                    </div>
+                    <h3 class="h4 mb-3">تعليم متميز</h3>
+                    <p class="text-muted mb-0">برامج أكاديمية معتمدة دولياً مع أحدث التقنيات والمناهج التعليمية المتطورة</p>
+                    <div class="feature-hover mt-3">
+                        <a href="#" class="btn btn-outline-primary btn-sm">اكتشف المزيد</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card h-100 p-4 text-center border rounded bg-white hover-shadow">
+                    <div class="feature-icon mb-4">
+                        <span class="icon-circle bg-primary-light">
+                            <i class="fas fa-flask text-primary fa-2x"></i>
+                        </span>
+                    </div>
+                    <h3 class="h4 mb-3">بحث علمي</h3>
+                    <p class="text-muted mb-0">مشاريع بحثية مبتكرة في مجالات الذكاء الاصطناعي والتكنولوجيا المتقدمة</p>
+                    <div class="feature-hover mt-3">
+                        <a href="#" class="btn btn-outline-primary btn-sm">استكشف أبحاثنا</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card h-100 p-4 text-center border rounded bg-white hover-shadow">
+                    <div class="feature-icon mb-4">
+                        <span class="icon-circle bg-primary-light">
+                            <i class="fas fa-handshake text-primary fa-2x"></i>
+                        </span>
+                    </div>
+                    <h3 class="h4 mb-3">شراكات دولية</h3>
+                    <p class="text-muted mb-0">تعاون استراتيجي مع جامعات ومؤسسات عالمية مرموقة في مجال التكنولوجيا</p>
+                    <div class="feature-hover mt-3">
+                        <a href="#" class="btn btn-outline-primary btn-sm">تعرف على شركائنا</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Vision & Mission Section -->
+<section class="vision-mission-section py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="badge bg-primary px-3 py-2 mb-3">رؤيتنا ورسالتنا</span>
+            <h2 class="section-title">نحو التميز والريادة</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="vision-card card h-100 border-0 shadow-sm hover-lift">
+                    <div class="card-body p-4 text-center">
+                        <div class="icon-wrapper mb-4">
+                            <i class="fas fa-eye fa-3x text-primary"></i>
+                        </div>
+                        <h2 class="card-title h3 mb-4">رؤيتنا</h2>
+                        <p class="card-text">أن تكون كلية الحاسبات والمعلومات مؤسسة تعليمية وبحثية رائدة في مجال علوم الحاسب وتكنولوجيا المعلومات، معترف بها محلياً ودولياً للتميز في البرامج الأكاديمية والبحث المبتكر.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mission-card card h-100 border-0 shadow-sm hover-lift">
+                    <div class="card-body p-4 text-center">
+                        <div class="icon-wrapper mb-4">
+                            <i class="fas fa-bullseye fa-3x text-primary"></i>
+                        </div>
+                        <h2 class="card-title h3 mb-4">رسالتنا</h2>
+                        <p class="card-text">إعداد خريجين مؤهلين تأهيلاً عالياً في مجالات علوم الحاسب وتكنولوجيا المعلومات من خلال توفير برامج تعليمية متميزة وإجراء بحوث مبتكرة تخدم احتياجات المجتمع.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Departments Section -->
+<section class="departments-section py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="badge bg-primary px-3 py-2 mb-3">أقسامنا</span>
+            <h2 class="section-title">الأقسام الأكاديمية</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="department-card card h-100 border-0 shadow-sm hover-lift">
+                    <div class="card-body p-4 text-center">
+                        <div class="icon-wrapper mb-4">
+                            <i class="fas fa-laptop-code fa-3x text-primary"></i>
+                        </div>
+                        <h3 class="card-title h4 mb-3">علوم الحاسب</h3>
+                        <p class="card-text text-muted">يركز على الجوانب النظرية والعملية للحوسبة والخوارزميات وتطوير البرمجيات.</p>
+                        <div class="mt-4">
+                            <a href="#" class="btn btn-outline-primary">اكتشف المزيد</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="department-card card h-100 border-0 shadow-sm hover-lift">
+                    <div class="card-body p-4 text-center">
+                        <div class="icon-wrapper mb-4">
+                            <i class="fas fa-database fa-3x text-primary"></i>
+                        </div>
+                        <h3 class="card-title h4 mb-3">نظم المعلومات</h3>
+                        <p class="card-text text-muted">متخصص في تصميم وتنفيذ أنظمة المعلومات المؤسسية وإدارة البيانات.</p>
+                        <div class="mt-4">
+                            <a href="#" class="btn btn-outline-primary">اكتشف المزيد</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="department-card card h-100 border-0 shadow-sm hover-lift">
+                    <div class="card-body p-4 text-center">
+                        <div class="icon-wrapper mb-4">
+                            <i class="fas fa-network-wired fa-3x text-primary"></i>
+                        </div>
+                        <h3 class="card-title h4 mb-3">تكنولوجيا المعلومات</h3>
+                        <p class="card-text text-muted">يركز على التطبيقات العملية لتكنولوجيا الحوسبة في الأعمال والصناعة.</p>
+                        <div class="mt-4">
+                            <a href="#" class="btn btn-outline-primary">اكتشف المزيد</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Study System Section -->
+<section class="study-system-section py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="badge bg-primary px-3 py-2 mb-3">نظام الدراسة</span>
+            <h2 class="section-title">نظام الساعات المعتمدة</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <div class="study-system-grid">
+                            <div class="study-item text-center p-3">
+                                <div class="icon-wrapper mb-3">
+                                    <i class="fas fa-clock fa-2x text-primary"></i>
+                                </div>
+                                <h4 class="h5">نظام مرن</h4>
+                                <p class="text-muted">مرونة في اختيار المقررات ووتيرة الدراسة</p>
+                            </div>
+                            <div class="study-item text-center p-3">
+                                <div class="icon-wrapper mb-3">
+                                    <i class="fas fa-calendar-alt fa-2x text-primary"></i>
+                                </div>
+                                <h4 class="h5">فصلين دراسيين</h4>
+                                <p class="text-muted">العام الدراسي مقسم إلى فصلين رئيسيين</p>
+                            </div>
+                            <div class="study-item text-center p-3">
+                                <div class="icon-wrapper mb-3">
+                                    <i class="fas fa-sun fa-2x text-primary"></i>
+                                </div>
+                                <h4 class="h5">فصل صيفي</h4>
+                                <p class="text-muted">إمكانية الدراسة في الفصل الصيفي</p>
+                            </div>
+                            <div class="study-item text-center p-3">
+                                <div class="icon-wrapper mb-3">
+                                    <i class="fas fa-globe fa-2x text-primary"></i>
+                                </div>
+                                <h4 class="h5">تدريس باللغة الإنجليزية</h4>
+                                <p class="text-muted">جميع البرامج تُدرس باللغة الإنجليزية</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Strategic Objectives Section -->
+<section class="objectives-section py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="badge bg-primary px-3 py-2 mb-3">أهدافنا</span>
+            <h2 class="section-title">الأهداف الاستراتيجية</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="objective-card card border-0 shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4">
+                        <div class="objective-icon mb-3">
+                            <i class="fas fa-graduation-cap text-primary fa-2x"></i>
+                        </div>
+                        <h4 class="card-title h5">جودة التعليم</h4>
+                        <p class="card-text text-muted">تطوير وصيانة برامج تعليمية عالية الجودة تلبي المعايير العالمية</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="objective-card card border-0 shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4">
+                        <div class="objective-icon mb-3">
+                            <i class="fas fa-flask text-primary fa-2x"></i>
+                        </div>
+                        <h4 class="card-title h5">البحث والابتكار</h4>
+                        <p class="card-text text-muted">تعزيز البحث العلمي والتطوير في مجالات التكنولوجيا المتقدمة</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="objective-card card border-0 shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4">
+                        <div class="objective-icon mb-3">
+                            <i class="fas fa-handshake text-primary fa-2x"></i>
+                        </div>
+                        <h4 class="card-title h5">الشراكات المجتمعية</h4>
+                        <p class="card-text text-muted">بناء شراكات قوية مع الصناعة والمجتمع لتعزيز التعاون المشترك</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="objective-card card border-0 shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4">
+                        <div class="objective-icon mb-3">
+                            <i class="fas fa-user-graduate text-primary fa-2x"></i>
+                        </div>
+                        <h4 class="card-title h5">تجربة الطلاب</h4>
+                        <p class="card-text text-muted">تعزيز تجربة التعلم ونتائج الطلاب من خلال التطوير المستمر</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="objective-card card border-0 shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4">
+                        <div class="objective-icon mb-3">
+                            <i class="fas fa-globe-americas text-primary fa-2x"></i>
+                        </div>
+                        <h4 class="card-title h5">التعاون الدولي</h4>
+                        <p class="card-text text-muted">تعزيز التعاون الدولي وتبادل الخبرات مع المؤسسات العالمية</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="objective-card card border-0 shadow-sm h-100 hover-lift">
+                    <div class="card-body p-4">
+                        <div class="objective-icon mb-3">
+                            <i class="fas fa-chalkboard-teacher text-primary fa-2x"></i>
+                        </div>
+                        <h4 class="card-title h5">تطوير الكادر</h4>
+                        <p class="card-text text-muted">دعم التطوير المستمر لأعضاء هيئة التدريس والموظفين</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

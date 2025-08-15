@@ -1,0 +1,127 @@
+/* Hero Section */
+.contact-hero {
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+    padding: 80px 0;
+    margin-bottom: 4rem;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/hero-bg.jpg') center/cover;
+    opacity: 0.1;
+}
+
+/* Contact Cards */
+.contact-cards-wrapper {
+    margin-top: -100px;
+}
+
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.bg-primary-light {
+    background-color: rgba(13, 110, 253, 0.1);
+}
+
+.hover-lift {
+    transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+}
+
+/* Contact Form */
+.contact-form .form-control {
+    border: none;
+    border-radius: 0 8px 8px 0;
+}
+
+.contact-form .input-group-text {
+    border: none;
+    border-radius: 8px 0 0 8px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #0d6efd;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+/* Modern Input Fields */
+.modern-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    background: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modern-input i {
+    color: #0d6efd;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.modern-input input,
+.modern-input textarea {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 1rem;
+    font-family: inherit;
+    background: transparent;
+}
+
+.modern-input:focus-within {
+    border-color: #0d6efd;
+    box-shadow: 0 0 8px rgba(13, 110, 253, 0.2);
+}
+
+/* Modern Button */
+.btn-modern {
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-modern i {
+    margin-left: 8px;
+}
+
+.btn-modern:hover {
+    background: #0a58ca;
+    transform: translateY(-2px);
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .contact-cards-wrapper {
+        margin-top: -50px;
+    }
+}
